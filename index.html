@@ -1,46 +1,141 @@
-<!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Eventually by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MEDIARR: one dashboard for your media server</title>
+  <meta name="description" content="MEDIARR is a free, self-hosted web app that brings Radarr, Sonarr, Plex, SABnzbd and your media files together: find and request titles, watch in the browser, and keep your library healthy.">
+  <meta name="theme-color" content="#14101a">
+  <meta property="og:title" content="MEDIARR">
+  <meta property="og:description" content="One self-hosted dashboard for Radarr, Sonarr, Plex and SABnzbd. Find, request, watch and look after your media.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xxsmack003xx.github.io/">
+  <meta property="og:image" content="https://xxsmack003xx.github.io/images/mediarr-icon-512.png">
+  <link rel="icon" href="images/mediarr-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/mediarr-icon-512.png">
+  <link rel="preload" href="assets/fonts/bebas-neue.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="assets/css/mediarr.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
 
-		<!-- Header -->
-			<header id="header">
-				<h1>Eventually</h1>
-				<p>A simple template for telling the world when you'll launch<br />
-				your next big thing. Brought to you by <a href="http://html5up.net">HTML5 UP</a>.</p>
-			</header>
+  <header class="top">
+    <a class="top-mark" href="#" aria-label="MEDIARR, back to top"><img src="images/mediarr-icon.svg" alt="" width="32" height="32"></a>
+    <nav aria-label="Page">
+      <a href="#features">Features</a>
+      <a href="#install">Install</a>
+      <a href="#releases">Releases</a>
+      <a href="https://github.com/XxSmack003xX/MEDIARR">GitHub</a>
+    </nav>
+  </header>
 
-		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="#">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
-			</form>
+  <main id="main">
+    <section class="hero" aria-labelledby="wordmark">
+      <h1 id="wordmark" class="wordmark"><span class="medi">MEDI</span><span class="arr">ARR</span></h1>
+      <p class="lede">One place to find, request, watch and look after the movies and shows on your media server. MEDIARR sits in front of Radarr, Sonarr, Plex and SABnzbd so your household gets one simple app and never sees an API key.</p>
+      <div class="actions">
+        <a class="btn btn-gold" id="downloadBtn" href="https://github.com/XxSmack003xX/MEDIARR/releases/latest"><span>Download</span><span data-version>v2.3.0</span></a>
+        <a class="btn btn-ghost" href="https://github.com/XxSmack003xX/MEDIARR">View the source on GitHub</a>
+      </div>
+      <p class="release-line" id="releaseLine">Latest release: <a href="https://github.com/XxSmack003xX/MEDIARR/releases/tag/v2.3.0" data-release-link><span data-version>v2.3.0</span></a>, <span data-release-date>11 October 2026</span>. Free and self-hosted.</p>
+    </section>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
+    <section id="features" class="block" aria-labelledby="features-title">
+      <h2 id="features-title">What it does</h2>
+      <dl class="spec">
+        <div class="row">
+          <dt>Find and request</dt>
+          <dd>
+            <p>Search movies and shows by title, actor, year, genre or studio. Every result shows whether it’s already in your library, and one click sends a new title to Radarr or Sonarr with your chosen quality and folder.</p>
+            <p class="small">Admins can also browse and grab exact releases, edit monitoring, and search for missing episodes.</p>
+          </dd>
+        </div>
+        <div class="row">
+          <dt>A home page for each person</dt>
+          <dd>
+            <p>Signed-in users land on their own page: what they were watching, what they asked for and whether it’s ready, upcoming episodes of their favourite shows, and their Plex watchlist.</p>
+          </dd>
+        </div>
+        <div class="row">
+          <dt>Watch in the browser</dt>
+          <dd>
+            <p>Play downloaded files straight from your server or a WebDAV share. MEDIARR checks each file and picks direct play, remux or transcode on its own, with audio and subtitle tracks, quality presets, hardware encoding and resume.</p>
+            <p class="small">Cast to Chromecast, Google TV or DLNA smart TVs from the player.</p>
+          </dd>
+        </div>
+        <div class="row">
+          <dt>Keep the library healthy</dt>
+          <dd>
+            <p>See downloads from SABnzbd, Radarr and Sonarr in one live view. MEDIARR spots monitored titles with missing files and can queue searches to fix them, shows storage and quality across the library, and keeps a history of service outages.</p>
+          </dd>
+        </div>
+        <div class="row">
+          <dt>Share it safely</dt>
+          <dd>
+            <p>People request access or sign in with Plex, and an admin approves them. Set daily request limits per person, hand out personal API keys, and send alerts to Discord, Slack, Telegram, ntfy, Gotify, Pushover, Pushbullet or any webhook.</p>
+          </dd>
+        </div>
+        <div class="row">
+          <dt>Easy to run</dt>
+          <dd>
+            <p>One Docker container with no database server to set up. Automatic backups, one-click updates that roll back on their own if something goes wrong, and an installable app for phones and desktops.</p>
+          </dd>
+        </div>
+      </dl>
+      <p class="works-with"><span>Works with</span> Radarr, Sonarr, Plex, SABnzbd, TMDB, WebDAV and Docker. MEDIARR isn’t affiliated with any of them.</p>
+    </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
+    <section id="install" class="block" aria-labelledby="install-title">
+      <h2 id="install-title">Install</h2>
+      <p class="intro">You need a machine with Docker and Docker Compose. Radarr, Sonarr and the rest can run anywhere MEDIARR can reach.</p>
+      <ol class="steps">
+        <li>
+          <h3>Download the release</h3>
+          <p>Get <a href="https://github.com/XxSmack003xX/MEDIARR/releases/latest" data-zip-link><code data-zip-name>mediarr-2.3.0.zip</code></a> from the latest release.</p>
+        </li>
+        <li>
+          <h3>Start MEDIARR</h3>
+<pre><code><span data-unzip>unzip mediarr-2.3.0.zip
+cd mediarr-2.3.0</span>
+mkdir -p data
+docker compose -f docker-compose.release.yml up -d</code></pre>
+          <button class="copy" type="button" data-copy aria-label="Copy the start commands">Copy</button>
+        </li>
+        <li>
+          <h3>Open it and set it up</h3>
+          <p>Go to <code>http://your-server:7575</code>, create the admin account, and follow the setup wizard to connect Radarr, Sonarr and TMDB. Everything else can be added later in Settings.</p>
+        </li>
+      </ol>
+      <div class="notes">
+        <p><strong>Prefer building it yourself?</strong> <code>git clone https://github.com/XxSmack003xX/MEDIARR.git</code>, then <code>docker compose up -d --build</code> in that folder. Without Docker it runs on Node.js 22.13 or newer with <code>node server.js</code>.</p>
+        <p><strong>About Docker controls.</strong> The included Compose file mounts the Docker socket so admins can restart containers and update MEDIARR in one click. That access is powerful: remove the socket line if you don’t need those features, and put MEDIARR behind HTTPS before exposing it to the internet.</p>
+      </div>
+    </section>
 
-	</body>
+    <section id="releases" class="block" aria-labelledby="releases-title">
+      <h2 id="releases-title">Recent releases</h2>
+      <ul class="releases" id="releaseList">
+        <li>
+          <a href="https://github.com/XxSmack003xX/MEDIARR/releases/tag/v2.3.0"><span class="tag">v2.3.0</span><time datetime="2026-10-11">11 October 2026</time></a>
+          <p>The MEDIARR logo takes you home, Escape and the Back button close windows instead of leaving the app, searches and titles can be shared as links, a notification bell replaces the floating hub button, and search outages explain themselves.</p>
+        </li>
+        <li>
+          <a href="https://github.com/XxSmack003xX/MEDIARR/releases/tag/v2.2.0"><span class="tag">v2.2.0</span><time datetime="2026-10-09">9 October 2026</time></a>
+          <p>A built-in database keeps people signed in through restarts and updates and stores up to 50,000 activity entries. Existing data moves over automatically on first launch.</p>
+        </li>
+        <li>
+          <a href="https://github.com/XxSmack003xX/MEDIARR/releases/tag/v2.1.0"><span class="tag">v2.1.0</span><time datetime="2026-10-07">7 October 2026</time></a>
+          <p>Much faster search and home pages, compressed pages, quicker playback start, and security fixes that keep stored service keys away from regular users.</p>
+        </li>
+      </ul>
+      <p class="more"><a href="https://github.com/XxSmack003xX/MEDIARR/blob/main/CHANGELOG.md">Read the full changelog</a></p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>MEDIARR is made by <a href="https://github.com/XxSmack003xX">XxSmack003xX</a>. Found a bug or have an idea? <a href="https://github.com/XxSmack003xX/MEDIARR/issues">Open an issue on GitHub</a>.</p>
+  </footer>
+
+  <script src="assets/js/mediarr.js"></script>
+</body>
 </html>
